@@ -1,0 +1,81 @@
+@import url(reset.css);
+.whb(@w,@h,@bg){
+    width:@w;
+    height:@h;
+    background: @bg;
+}
+.full{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+//封装新弹性盒子
+.box(@dir:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+//根元素  100%  满屏设置
+html,body,.container{
+   .full;
+}
+.container{
+    .box(vertical);
+}
+.main{
+    -webkit-box-flex:1;
+    background: #f3f3f3;
+    overflow-y:auto;
+    
+    //列表
+    .list{
+        .whb(100%,.85rem,#fff);
+        border-bottom: 1px #ccc solid;
+        .box;
+        -webkit-box-align:center;
+        .more{
+            width:.14rem;
+        }
+        .text{
+            -webkit-box-flex:1;
+            background: #ff0;
+        }
+        .title{         
+            padding-left: .54rem;
+            margin-left: .4rem;           
+            font-weight:normal;           
+            &.bg1{ 
+                background: url(../img/vip.png) no-repeat  left center;
+                background-size:.36rem auto;}
+            &.bg2{ background: url(../img/yao.png) no-repeat  left center;background-size:.36rem auto;}
+        }
+    }
+  
+}
+.header{
+    .whb(100%,3.14rem,null);
+    background: url(../img/ju-24.png) no-repeat;
+    background-size:100% auto;
+    .box(vertical);
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    
+    .headimg{
+        width: 1.58rem;
+        height: auto;
+    }
+    .msg{
+        .whb(1.37rem,.52rem,#ff0);
+        position:absolute;
+        right:.4rem;
+        top:.24rem;
+    }
+}
+.footer{
+    .whb(100%,.32rem,#ff0);
+}
+
+//这是2我的页面样式
+.edit{
+    
+}
+//这是我第三张页面

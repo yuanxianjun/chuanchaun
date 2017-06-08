@@ -1,0 +1,79 @@
+@import url(reset.css);
+.full {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main {
+  -webkit-box-flex: 1;
+  background: #f3f3f3;
+  overflow-y: auto;
+}
+.main .list {
+  width: 100%;
+  height: 0.85rem;
+  background: #ffffff;
+  border-bottom: 1px #ccc solid;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.main .list .more {
+  width: .14rem;
+}
+.main .list .text {
+  -webkit-box-flex: 1;
+  background: #ff0;
+}
+.main .list .title {
+  padding-left: .54rem;
+  margin-left: .4rem;
+  font-weight: normal;
+}
+.main .list .title.bg1 {
+  background: url(../img/vip.png) no-repeat left center;
+  background-size: .36rem auto;
+}
+.main .list .title.bg2 {
+  background: url(../img/yao.png) no-repeat left center;
+  background-size: .36rem auto;
+}
+.header {
+  width: 100%;
+  height: 3.14rem;
+  background: null;
+  background: url(../img/ju-24.png) no-repeat;
+  background-size: 100% auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.header .headimg {
+  width: 1.58rem;
+  height: auto;
+}
+.header .msg {
+  width: 1.37rem;
+  height: 0.52rem;
+  background: #ffff00;
+  position: absolute;
+  right: .4rem;
+  top: .24rem;
+}
+.footer {
+  width: 100%;
+  height: 0.32rem;
+  background: #ffff00;
+}
